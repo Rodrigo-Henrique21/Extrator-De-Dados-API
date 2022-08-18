@@ -274,8 +274,8 @@ else:
 upload_all_data(blob_texts)
 
 # JUNTA TODOS CSV'S
-connection_string = "DefaultEndpointsProtocol=https;AccountName=staengdados;AccountKey=KtfGJ/u3NWxqsFBksx2gR8hRVAcpV0lsVr9liYwsXJoTx68DIa2KtFVobhO6Ob3bmo8PcobxzNYk+AStltMUjA==;EndpointSuffix=core.windows.net"
-container_name = "clean"
+connection_string = ""
+container_name = ""
 blob_service_client = BlobServiceClient.from_connection_string(connection_string)
 container_client = blob_service_client.get_container_client(container_name)
 blob_list = container_client.list_blobs()
